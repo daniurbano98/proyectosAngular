@@ -333,6 +333,9 @@
   <input type="text" placeholder="Nombre del usuario" [(ngModel)]="usuario"/>
   
   <app-saludo [nombre]="usuario" (mensajeEmitter)="recibirMensajeDelHijo($event)"></app-saludo>
+
+  <app-saludo  (mensajeEmitter)="firstWay()"></app-saludo>
+
   <!--cuando utlizamos algo que esta entre corchetes hacemos referencia a lgo que este en el ts-->
 
 

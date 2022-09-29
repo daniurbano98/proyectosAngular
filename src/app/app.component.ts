@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import data from '../assets/prueba.json';
 
 @Component({
   selector: 'app-root',
@@ -15,4 +16,8 @@ export class AppComponent {
   recibirMensajeDelHijo(evento: string){
     alert(evento);
   }
+
+  firstWay(){
+    console.log(data);
+  } 
 }
